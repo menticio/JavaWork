@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Registro de Estudiantes</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎓 Registro de Estudiantes</h1>
+
+<div class="card">
+
+<h2>Registrar Estudiante</h2>
+
+<input type="text" id="nombre" placeholder="Nombre">
+
+<input type="number" id="edad" placeholder="Edad">
+
+<input type="text" id="asignatura" placeholder="Asignatura">
+
+<input type="number" id="notaFinal" placeholder="Nota final">
+
+<button onclick="registrarEstudiante()">Registrar</button>
+
+</div>
+
+<div class="card">
+
+<h2>Lista de Estudiantes</h2>
+
+<table>
+
+<thead>
+
+<tr>
+<th>Nombre</th>
+<th>Edad</th>
+<th>Asignatura</th>
+<th>Nota</th>
+<th>Estado</th>
+</tr>
+
+</thead>
+
+<tbody id="lista"></tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="js/Estudent.js"></script>
+<script src="js/RegisterEstudents.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

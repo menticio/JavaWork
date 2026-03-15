@@ -1,0 +1,28 @@
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.body-Red{
+    display: flex;
+    background-color: red;
+    justify-content: center;
+}
+
+.body-Blue{
+    display: flex;
+    background-color: blue;
+    justify-content: center;
+}
+
+.body-Green{
+    display: flex;
+    background-color: green;
+    justify-content: center;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}

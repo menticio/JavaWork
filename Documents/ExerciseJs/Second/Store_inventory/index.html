@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Inventario de Tienda</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📦 Inventario de Tienda</h1>
+
+<div class="card">
+
+<h2>Registrar Producto</h2>
+
+<input type="text" id="nombre" placeholder="Nombre del producto">
+<input type="number" id="precio" placeholder="Precio">
+<input type="number" id="cantidad" placeholder="Cantidad">
+
+<button onclick="registrarProducto()">Agregar Producto</button>
+
+</div>
+
+<div class="card">
+
+<h2>Buscar Producto</h2>
+
+<input type="text" id="buscar" placeholder="Nombre del producto">
+
+<button onclick="buscarProducto()">Buscar</button>
+
+<p id="resultadoBusqueda"></p>
+
+</div>
+
+<div class="card">
+
+<h2>Productos en Inventario</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Precio</th>
+<th>Cantidad</th>
+<th>Valor total</th>
+</tr>
+</thead>
+
+<tbody id="lista"></tbody>
+
+</table>
+
+<button onclick="calcularInventario()">
+Calcular valor total del inventario
+</button>
+
+<h3 id="totalInventario"></h3>
+
+</div>
+
+</div>
+
+<script src="js/Producto.js"></script>
+<script src="js/Inventario.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

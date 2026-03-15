@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Calculadora</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 300px; margin: 50px auto; }
+    input { width: 100%; padding: 6px; margin-top: 8px; box-sizing: border-box; }
+    select { width: 100%; padding: 6px; margin-top: 8px; }
+    button { margin-top: 12px; padding: 8px 20px; cursor: pointer; }
+    #resultado { margin-top: 14px; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <h2>Calculadora</h2>
+
+  <label>Número 1: <input type="number" id="num1"/></label>
+  <label>Operación:
+    <select id="operacion">
+      <option value="+">+ Suma</option>
+      <option value="-">- Resta</option>
+      <option value="*">* Multiplicación</option>
+      <option value="/">/  División</option>
+    </select>
+  </label>
+  <label>Número 2: <input type="number" id="num2"/></label>
+
+  <button id="btnCalcular">Calcular</button>
+
+  <p id="resultado"></p>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

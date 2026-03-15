@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Banco Digital</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🏦 Banco Digital</h1>
+
+<div class="card">
+
+<h2>Registrar Cliente</h2>
+
+<input type="text" id="nombre" placeholder="Nombre del cliente">
+
+<button onclick="registrarCliente()">Registrar Cliente</button>
+
+</div>
+
+<div class="card">
+
+<h2>Operaciones Bancarias</h2>
+
+<input type="number" id="monto" placeholder="Monto">
+
+<div class="buttons">
+
+<button onclick="depositar()" class="depositar">Depositar</button>
+<button onclick="retirar()" class="retirar">Retirar</button>
+<button onclick="consultarSaldo()" class="saldo">Consultar saldo</button>
+
+</div>
+
+</div>
+
+<div class="resultado">
+
+<h3 id="resultado">Bienvenido al banco</h3>
+
+</div>
+
+</div>
+
+<script src="js/Cuenta.js"></script>
+<script src="js/Cliente.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

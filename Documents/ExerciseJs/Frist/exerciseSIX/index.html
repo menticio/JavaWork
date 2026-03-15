@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Formulario</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+      margin: 50px auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+    }
+
+    input {
+      width: 100%;
+      padding: 6px;
+      margin-top: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      margin-top: 16px;
+      padding: 8px 20px;
+      cursor: pointer;
+    }
+
+    #mensaje {
+      margin-top: 14px;
+      color: red;
+      font-weight: bold;
+    }
+
+    #exito {
+      margin-top: 14px;
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Formulario</h2>
+
+  <form id="miFormulario">
+    <label>Nombre:
+      <input type="text" id="nombre"/>
+    </label>
+    <label>Correo:
+      <input type="text" id="correo"/>
+    </label>
+    <label>Edad:
+      <input type="text" id="edad"/>
+    </label>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <p id="mensaje"></p>
+  <p id="exito"></p>
+
+  <script src="js/formulario.js"></script>
+
+</body>
+</html>

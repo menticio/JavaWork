@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistema de Biblioteca</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <h1>Sistema de Préstamos - Biblioteca</h1>
+
+  <div class="seccion">
+    <h2>Agregar libro</h2>
+    <label>Título: <input type="text" id="input-titulo" placeholder="Título del libro"/></label>
+    <label>Autor: <input type="text" id="input-autor" placeholder="Nombre del autor"/></label>
+    <button id="btn-agregar">Agregar</button>
+  </div>
+
+  <div class="seccion">
+    <h2>Prestar libro</h2>
+    <label>Usuario: <input type="text" id="input-usuario" placeholder="Nombre del usuario"/></label>
+    <label>Libro:
+      <select id="select-prestar">
+        <option value="">-- Selecciona un libro disponible --</option>
+      </select>
+    </label>
+    <button id="btn-prestar">Prestar</button>
+  </div>
+
+
+  <div class="seccion">
+    <h2>Devolver libro</h2>
+    <label>Libro:
+      <select id="select-devolver">
+        <option value="">-- Selecciona un libro prestado --</option>
+      </select>
+    </label>
+    <button id="btn-devolver">Devolver</button>
+  </div>
+
+  <div class="seccion">
+    <h2>Consulta de libros</h2>
+    <table id="tabla-libros">
+      <thead>
+        <tr>
+          <th>Título</th>
+          <th>Autor</th>
+          <th>Estado</th>
+          <th>Prestado a</th>
+        </tr>
+      </thead>
+      <tbody id="tbody-libros"></tbody>
+    </table>
+    <p id="msg-vacio" style="display:none;">No hay libros registrados.</p>
+  </div>
+
+  <div id="mensaje"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

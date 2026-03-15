@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+  background: #f9f9f9;
+  color: #222;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.seccion {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"] {
+  margin-left: 6px;
+  padding: 5px 8px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  width: 250px;
+}
+
+select {
+  margin-left: 6px;
+  padding: 5px 8px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  width: 264px;
+}
+
+button {
+  margin-top: 8px;
+  padding: 7px 18px;
+  background: #3a7bd5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2a5faa;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background: #eee;
+}
+
+.disponible {
+  color: green;
+  font-weight: bold;
+}
+
+.prestado {
+  color: red;
+  font-weight: bold;
+}
+
+#mensaje {
+  text-align: center;
+  font-weight: bold;
+  color: #b05000;
+  min-height: 24px;
+  margin-top: 10px;
+}

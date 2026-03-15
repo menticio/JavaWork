@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Control de Vehículos</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🚗 Control de Vehículos</h1>
+
+<h2>Registrar vehículo</h2>
+
+<input type="text" id="placa" placeholder="Placa del vehículo">
+
+<button onclick="registrarVehiculo()">Registrar</button>
+
+<h2>Controlar vehículo</h2>
+
+<input type="text" id="placaControl" placeholder="Placa">
+
+<button onclick="acelerar()">Acelerar</button>
+
+<button onclick="frenar()">Frenar</button>
+
+<h2>Estado de los vehículos</h2>
+
+<div id="lista"></div>
+
+</div>
+
+<script src="js/Vehiculo.js"></script>
+<script src="js/SistemaVehiculo.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
